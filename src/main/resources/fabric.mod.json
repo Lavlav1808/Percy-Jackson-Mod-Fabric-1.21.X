@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "pjmod",
+	"version": "${version}",
+	"name": "Percy Jackson Mod",
+	"description": "A Mod By Lavlav On The Percy Jackson Book Series By Lavlav1808.",
+	"authors": [
+		"Lavlav"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/pjmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.lavlav.pjmod.PercyJacksonMod"
+		],
+		"fabric-datagen": [
+			"net.lavlav.pjmod.PercyJacksonModDataGenerator"
+		],
+		"client": [
+			"net.lavlav.pjmod.PjModClient"
+		]
+	},
+	"mixins": [
+		"pjmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
